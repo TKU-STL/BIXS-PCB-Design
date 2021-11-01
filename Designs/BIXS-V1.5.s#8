@@ -7174,7 +7174,7 @@ Arduino Uno R3 Compatible Footprint. Matches PCB size of the original board.
 <segment>
 <pinref part="J2" gate="J1" pin="10"/>
 <wire x1="149.86" y1="271.78" x2="142.24" y2="271.78" width="0.1524" layer="91"/>
-<label x="142.24" y="271.78" size="1.778" layer="95"/>
+<label x="116.84" y="284.48" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="3V-2" class="0">
@@ -7199,6 +7199,20 @@ Arduino Uno R3 Compatible Footprint. Matches PCB size of the original board.
 <pinref part="V3.3-2" gate="G$1" pin="2"/>
 <wire x1="66.04" y1="223.52" x2="68.58" y2="223.52" width="0.1524" layer="91"/>
 <label x="68.58" y="223.52" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="RX" class="0">
+<segment>
+<pinref part="XBEE" gate="G$1" pin="RX"/>
+<wire x1="193.04" y1="269.24" x2="185.42" y2="269.24" width="0.1524" layer="91"/>
+<label x="180.34" y="269.24" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="TX" class="0">
+<segment>
+<pinref part="XBEE" gate="G$1" pin="TX"/>
+<wire x1="193.04" y1="266.7" x2="185.42" y2="266.7" width="0.1524" layer="91"/>
+<label x="180.34" y="266.7" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="5V-2" class="0">
@@ -7229,14 +7243,14 @@ Arduino Uno R3 Compatible Footprint. Matches PCB size of the original board.
 <segment>
 <pinref part="MSD" gate="G$1" pin="BLK"/>
 <wire x1="193.04" y1="337.82" x2="182.88" y2="337.82" width="0.1524" layer="91"/>
-<label x="180.34" y="337.82" size="1.778" layer="95"/>
+<label x="185.42" y="337.82" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GND-5-3" class="0">
 <segment>
 <pinref part="MSD" gate="G$1" pin="GND"/>
 <wire x1="193.04" y1="335.28" x2="182.88" y2="335.28" width="0.1524" layer="91"/>
-<label x="180.34" y="335.28" size="1.778" layer="95"/>
+<label x="185.42" y="335.28" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="5V3" gate="G$1" pin="2"/>
@@ -7248,7 +7262,7 @@ Arduino Uno R3 Compatible Footprint. Matches PCB size of the original board.
 <segment>
 <pinref part="MSD" gate="G$1" pin="VCC"/>
 <wire x1="193.04" y1="332.74" x2="182.88" y2="332.74" width="0.1524" layer="91"/>
-<label x="180.34" y="332.74" size="1.778" layer="95"/>
+<label x="185.42" y="332.74" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="5V3" gate="G$1" pin="1"/>
@@ -7258,38 +7272,31 @@ Arduino Uno R3 Compatible Footprint. Matches PCB size of the original board.
 </net>
 <net name="TXU" class="0">
 <segment>
+<pinref part="MSD" gate="G$1" pin="TXU"/>
+<wire x1="193.04" y1="330.2" x2="182.88" y2="330.2" width="0.1524" layer="91"/>
+<label x="185.42" y="330.2" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="UNO" gate="G$1" pin="D1"/>
+<wire x1="111.76" y1="325.12" x2="116.84" y2="325.12" width="0.1524" layer="91"/>
+<label x="116.84" y="325.12" size="1.778" layer="95"/>
+</segment>
+<segment>
 <pinref part="J3" gate="G$1" pin="2"/>
 <wire x1="149.86" y1="325.12" x2="144.78" y2="325.12" width="0.1524" layer="91"/>
 <label x="142.24" y="325.12" size="1.778" layer="95"/>
 </segment>
+</net>
+<net name="RXI" class="0">
 <segment>
 <pinref part="MSD" gate="G$1" pin="RXI"/>
-<label x="180.34" y="327.66" size="1.778" layer="95"/>
-<wire x1="193.04" y1="327.66" x2="175.26" y2="327.66" width="0.1524" layer="91"/>
-<wire x1="175.26" y1="327.66" x2="170.18" y2="327.66" width="0.1524" layer="91"/>
-<wire x1="170.18" y1="327.66" x2="170.18" y2="332.74" width="0.1524" layer="91"/>
-<wire x1="170.18" y1="332.74" x2="124.46" y2="332.74" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="332.74" x2="124.46" y2="325.12" width="0.1524" layer="91"/>
-<pinref part="UNO" gate="G$1" pin="D1"/>
-<label x="116.84" y="325.12" size="1.778" layer="95"/>
-<wire x1="124.46" y1="325.12" x2="111.76" y2="325.12" width="0.1524" layer="91"/>
-<wire x1="175.26" y1="327.66" x2="175.26" y2="269.24" width="0.1524" layer="91"/>
-<junction x="175.26" y="327.66"/>
-<pinref part="XBEE" gate="G$1" pin="RX"/>
-<label x="180.34" y="269.24" size="1.778" layer="95"/>
-<wire x1="175.26" y1="269.24" x2="193.04" y2="269.24" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="327.66" x2="182.88" y2="327.66" width="0.1524" layer="91"/>
+<label x="185.42" y="327.66" size="1.778" layer="95"/>
 </segment>
-</net>
-<net name="RXU" class="0">
 <segment>
 <pinref part="UNO" gate="G$1" pin="D0"/>
+<wire x1="111.76" y1="327.66" x2="116.84" y2="327.66" width="0.1524" layer="91"/>
 <label x="116.84" y="327.66" size="1.778" layer="95"/>
-<wire x1="111.76" y1="327.66" x2="121.92" y2="327.66" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="327.66" x2="121.92" y2="335.28" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="335.28" x2="162.56" y2="335.28" width="0.1524" layer="91"/>
-<wire x1="162.56" y1="335.28" x2="162.56" y2="266.7" width="0.1524" layer="91"/>
-<pinref part="XBEE" gate="G$1" pin="TX"/>
-<wire x1="162.56" y1="266.7" x2="193.04" y2="266.7" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="J3" gate="G$1" pin="1"/>
@@ -7301,7 +7308,7 @@ Arduino Uno R3 Compatible Footprint. Matches PCB size of the original board.
 <segment>
 <pinref part="MSD" gate="G$1" pin="GRN"/>
 <wire x1="193.04" y1="325.12" x2="182.88" y2="325.12" width="0.1524" layer="91"/>
-<label x="180.34" y="325.12" size="1.778" layer="95"/>
+<label x="185.42" y="325.12" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -7315,16 +7322,6 @@ Arduino Uno R3 Compatible Footprint. Matches PCB size of the original board.
 <wire x1="111.76" y1="238.76" x2="114.3" y2="238.76" width="0.1524" layer="91"/>
 <label x="114.3" y="238.76" size="1.778" layer="95"/>
 </segment>
-<segment>
-<pinref part="UNO" gate="G$1" pin="GND@0"/>
-<wire x1="86.36" y1="289.56" x2="66.04" y2="289.56" width="0.1524" layer="91"/>
-<label x="66.04" y="289.56" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="J1" gate="G$1" pin="2"/>
-<wire x1="17.78" y1="317.5" x2="33.02" y2="317.5" width="0.1524" layer="91"/>
-<label x="33.02" y="317.5" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="VCC" class="0">
 <segment>
@@ -7337,22 +7334,22 @@ Arduino Uno R3 Compatible Footprint. Matches PCB size of the original board.
 <wire x1="111.76" y1="236.22" x2="114.3" y2="236.22" width="0.1524" layer="91"/>
 <label x="114.3" y="236.22" size="1.778" layer="95"/>
 </segment>
-<segment>
-<pinref part="UNO" gate="G$1" pin="VIN"/>
-<wire x1="86.36" y1="304.8" x2="66.04" y2="304.8" width="0.1524" layer="91"/>
-<label x="66.04" y="304.8" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="J1" gate="G$1" pin="1"/>
-<wire x1="17.78" y1="314.96" x2="33.02" y2="314.96" width="0.1524" layer="91"/>
-<label x="33.02" y="314.96" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="5VIN" class="0">
+<segment>
+<pinref part="UNO" gate="G$1" pin="VIN"/>
+<label x="73.66" y="304.8" size="1.778" layer="95"/>
+<wire x1="86.36" y1="304.8" x2="66.04" y2="304.8" width="0.1524" layer="91"/>
+</segment>
 <segment>
 <pinref part="5V1" gate="G$1" pin="1"/>
 <wire x1="88.9" y1="236.22" x2="91.44" y2="236.22" width="0.1524" layer="91"/>
 <label x="91.44" y="236.22" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="1"/>
+<wire x1="17.78" y1="314.96" x2="27.94" y2="314.96" width="0.1524" layer="91"/>
+<label x="30.48" y="314.96" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ARD_GND" class="0">
@@ -7360,6 +7357,16 @@ Arduino Uno R3 Compatible Footprint. Matches PCB size of the original board.
 <pinref part="5V1" gate="G$1" pin="2"/>
 <wire x1="88.9" y1="238.76" x2="91.44" y2="238.76" width="0.1524" layer="91"/>
 <label x="88.9" y="238.76" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="UNO" gate="G$1" pin="GND@0"/>
+<label x="68.58" y="289.56" size="1.778" layer="95"/>
+<wire x1="66.04" y1="289.56" x2="86.36" y2="289.56" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="2"/>
+<wire x1="17.78" y1="317.5" x2="27.94" y2="317.5" width="0.1524" layer="91"/>
+<label x="30.48" y="317.5" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
